@@ -135,11 +135,12 @@ jobs:
           echo "Suppression du bucket S3"
           echo "════════════════════════════════════════════"
           
-          echo "Pour supprimer le bucket, décommentez les lignes ci-dessous"
+         
           
           # Décommentez ces lignes pour supprimer le bucket
-          # aws s3 rb s3://${{ env.BUCKET_NAME }} --force
-          # echo "Bucket S3 supprimé"
+         
+          aws s3 rb s3://${{ env.BUCKET_NAME }} --force
+          echo "Bucket S3 supprimé"
           
           echo "Le bucket S3 est conservé pour référence"
           echo "   Vous pouvez le supprimer manuellement depuis la console AWS"
