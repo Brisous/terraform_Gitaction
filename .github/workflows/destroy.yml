@@ -126,8 +126,8 @@ jobs:
           echo "Pour supprimer automatiquement, décommentez les lignes ci-dessous"
           
           # Décommentez ces lignes pour supprimer automatiquement
-          # aws s3 rm s3://${{ env.BUCKET_NAME }}/project/ --recursive
-          # echo "Fichiers d'état supprimés"
+          aws s3 rm s3://${{ env.BUCKET_NAME }}/project/ --recursive
+          echo "Fichiers d'état supprimés"
 
       - name: Delete S3 Bucket 
         run: |
