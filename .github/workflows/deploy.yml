@@ -3,6 +3,7 @@ name: Terraform Infrastructure Deployment
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 env:
   BUCKET_NAME: terraform-state-brisouss-2025  
